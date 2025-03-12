@@ -9,7 +9,13 @@ const Organization = () => {
                 <div className="w-11/12 desktop:w-3/4 gap-5 flex flex-col ">
                     <div className="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-14 justify-between items-center">
                         {
-                            organizations.sort((a, b) => a.org_name.localeCompare(b.org_name)).map((member) => {
+                            organizations.sort((a, b) => {
+                                const aStartYear = parseInt(a.org_period.split('-')[0], 10);
+                                const bStartYear = parseInt(b.org_period.split('-')[0], 10);
+
+                                return bStartYear - aStartYear;
+                            })
+                                .map((member) => {
                                 return (
                                     <ExperienceCard
                                         key={member.org_name}
