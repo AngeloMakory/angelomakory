@@ -14,8 +14,8 @@ export default function About() {
             <br/>
             <br/>
             <div className="text-2xl font-[family-name:var(--font-geist-mono)] bg-gradient-to-r from-green-600 via-yellow-500 to-blue-500 text-transparent bg-clip-text">
-                <h2>
-                    EDUCATION
+                <h2 className="text-4xl">
+                    My Education
                 </h2>
                 <p>
                     <Education/>

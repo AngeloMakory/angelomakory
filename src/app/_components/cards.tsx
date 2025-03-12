@@ -38,19 +38,30 @@ export const ProjectCard: React.FC <ProjectCardDetails> = ({
     project_url,
 }) => { 
     return(
-        <div className="flex flex-col gap-3 w-full justify-between rounded-lg h-full p-5">
+        <div className="flex flex-col gap-3 w-full justify-between rounded-lg h-full p-5 border-2 border-yellow-500 border-opacity-80">
      
-        <h2 className="text-xl line-clamp-2 desktop:text-2xl font-medium text-green_s4">
-            {project_name}, <i>{project_date}</i>
+        <h2 className="text-3xl line-clamp-2 desktop:text-4xl font-medium text-green_s4">
+            <b>{project_name}, <i>{project_date}</i></b>
         </h2>
-        <h3 className="text-xl line-clamp-2 desktop:text-2xl font-medium text-green_s4">
+        <h3 className="text-xl line-clamp-2 desktop:text-2xl font-medium">
             {project_tags}
         </h3>
         <p className="tablet:text-sm desktop:text-md line-clamp-4">
         {project_desc}
         </p>
-        <span className="w-full flex flex-row-reverse items-center gap-2 text-green_s1 hover:text-green_s4">
-            <a href={project_url} target="_blank">
+        <span className="w-full flex flex-row-reverse items-center gap-2 ">
+            <a 
+                href={project_url} 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 border-2 border-yellow-500 bg-transparent text-yellow-500 rounded hover:bg-yellow-500 hover:text-black transition-colors duration-300 flex items-center gap-2"
+            >
+                Visit Project
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
             </a>
         </span>
         </div>

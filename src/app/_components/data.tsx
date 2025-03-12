@@ -81,28 +81,28 @@ export const projects = [
         project_date:'2024',
         project_tags:'Astralyn',
         project_desc:'Organizational Profile and Community Platform',
-        project_url:''
+        project_url:'https://sustainable.co.ke'
     },
     {   
         project_name:'Impexicon East Africa',
         project_date:'2023',
         project_tags:'Astralyn',
         project_desc:'Company web portfolio for a company that services heavy commercial vehicles',
-        project_url:''
+        project_url:'https://impexicon.com'
     },
     {   
         project_name:'Moveit',
         project_date:'2023',
         project_tags:'Freelance',
         project_desc:'Mobile delivery app for water in Nairobi communities built on Kotlin',
-        project_url:''
+        project_url:'https://github.com/AngeloMakory/moveit'
     },
     {   
         project_name:'Mboga Thrifts',
         project_date:'2022',
         project_tags:'Freelance',
         project_desc:'E-commerce project for vegetables built with PHP, HTML/CSS and Javascript',
-        project_url:''
+        project_url:'https://github.com/AngeloMakory/MbogaThrifts'
     },
 ]
 
