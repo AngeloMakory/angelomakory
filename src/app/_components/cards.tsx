@@ -6,13 +6,13 @@ import  React  from 'react'
 // import { FaDownload, FaLocationPin, FaVideo } from "react-icons/fa6";
 // import { CiInstagram, CiLinkedin, CiVideoOn } from "react-icons/ci";
 
-// type ExperienceCardDetails = {
-//     org_logo: string;
-//     org_name: string;
-//     org_title: string;
-//     org_period: string;
-//     org_description:string;
-// };
+type ExperienceCardDetails = {
+    //org_logo: string;
+    org_name: string;
+    org_title: string;
+    org_period: string;
+    org_description:string;
+};
 
 type ProjectCardDetails = {
     project_name: string;
@@ -86,6 +86,30 @@ export const EducationCard: React.FC <EducationCardDetails> = ({
         </h3>
         <p className="tablet:text-sm desktop:text-md line-clamp-4">
         {school_status}
+        </p>
+        
+        </div>
+    );
+};
+
+export const ExperienceCard: React.FC <ExperienceCardDetails> = ({
+    //org_logo,
+    org_name,
+    org_title,
+    org_period,
+    org_description,
+}) =>{
+    return (
+        <div className="flex flex-col gap-3 w-full justify-between rounded-lg h-full p-5 border-2 border-yellow-500 border-opacity-80">
+     
+        <h2 className="text-3xl line-clamp-2 desktop:text-4xl font-medium">
+            {org_name}, <i>{org_period}</i>
+        </h2>
+        <h3 className="text-xl line-clamp-2 desktop:text-2xl font-medium">
+            {org_title}
+        </h3>
+        <p className="tablet:text-sm desktop:text-md line-clamp-4">
+            {org_description}
         </p>
         
         </div>

@@ -5,26 +5,26 @@ import Riara from './../../../public/school-logos/Riara.png'
 import MEC from './../../../public/school-logos/MEC.png'
 
 
-export const experience = [
+export const organizations = [
     {
         org_logo:'',
-        org_name:'',
-        org_title:'',
-        org_period:'',
+        org_name:'Astralyn Group',
+        org_title:'Co-founder',
+        org_period:'May 2023 to Present',
         org_description:''
     },
     {
         org_logo:'',
-        org_name:'',
-        org_title:'',
-        org_period:'',
+        org_name:'Freelance Software Engineer',
+        org_title:'Self-employed',
+        org_period:'Jan 2022 to May 2023',
         org_description:''
     },
     {
         org_logo:'',
-        org_name:'',
-        org_title:'',
-        org_period:'',
+        org_name:'Kenyatta National Hospital',
+        org_title:'ICT officer/Network Engineering Intern',
+        org_period:'Jan 2023 to Mar 2023',
         org_description:''
     }
 ]
