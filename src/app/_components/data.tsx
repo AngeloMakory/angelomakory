@@ -31,7 +31,7 @@ export const organizations = [
 export const schools = [
     {
         school_logo : SU,
-        school_name : 'Strathmore University',
+        school_name : 'Strathmore University School of Computing and Engineering Sciences',
         school_course: 'BSc. Informatics and Computer Science',
         school_period: 'April 2020 to June 2024',
         school_status: 'Graduated June 2024 with Second Class Upper Division' //Here we define if ongoing or completed by saying something like graduated June 2024
@@ -45,7 +45,7 @@ export const schools = [
     },
     {
         school_logo : SU,
-        school_name : 'Strathmore University',
+        school_name : 'Strathmore University Strathmore Institute',
         school_course: 'Certificate in International Computers Driving License(ICDL)',
         school_period: 'Jan 2020 to Mar 2020',
         school_status: 'Graduated with Pass' //Here we define if ongoing or completed by saying something like graduated June 2024
