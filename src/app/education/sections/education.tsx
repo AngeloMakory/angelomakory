@@ -3,7 +3,7 @@ import React from "react";
 import { EducationCard } from "@/app/_components/cards";
 import { schools } from "@/app/_components/data";
 
-const Education = () => {
+const School = () => {
     return (
         <div className="flex flex-col w-full justify-center items-center bg-cream py-10">
         <div className="w-11/12 desktop:w-3/4 gap-5 flex flex-col ">
@@ -28,4 +28,4 @@ const Education = () => {
     )
 }
 
-export default Education
+export default School

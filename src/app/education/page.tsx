@@ -1,8 +1,8 @@
 import Header from "../_components/header"
 import Footer from "../_components/footer"
-import Education from "../education/sections/education"
+import School from "./sections/education"
 
-export default function About() {
+export default function Education() {
     return (
         <div className="min-h-screen p-8 pb-20 gap-16 sm:p-20">
             <Header />
@@ -15,7 +15,7 @@ export default function About() {
             <br/>
             <div className="text-2xl font-[family-name:var(--font-geist-mono)] bg-gradient-to-r from-green-600 via-yellow-500 to-blue-500 text-transparent bg-clip-text">
                 <p>
-                    <Education/>
+                    <School/>
                 </p>
             </div>
             <Footer />
