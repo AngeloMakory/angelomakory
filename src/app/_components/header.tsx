@@ -19,6 +19,9 @@ export default function Header() {
                             <Link className="hover:text-white transition-colors duration-300"href="/about" >About Me</Link>                        
                         </li>
                         <li>
+                            <Link className="hover:text-white transition-colors duration-300" href="/education" >My Education</Link>
+                        </li>
+                        <li>
                             <Link className="hover:text-white transition-colors duration-300" href="/projects" >My Projects</Link>
                         </li>
                         <li>

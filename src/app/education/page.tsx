@@ -1,6 +1,6 @@
 import Header from "../_components/header"
 import Footer from "../_components/footer"
-//import Education from "../education/sections/education"
+import Education from "../education/sections/education"
 
 export default function About() {
     return (
@@ -8,19 +8,16 @@ export default function About() {
             <Header />
             <br />
             <h1 className="text-4xl font-bold font-[family-name:var(--font-geist-mono)] bg-gradient-to-r from-green-600 via-yellow-500 to-blue-500 text-transparent bg-clip-text">
-                About Angelo
+                My Education
             </h1>
             
             <br/>
             <br/>
-            {/* <div className="text-2xl font-[family-name:var(--font-geist-mono)] bg-gradient-to-r from-green-600 via-yellow-500 to-blue-500 text-transparent bg-clip-text">
-                <h2 className="text-4xl">
-                    My Education
-                </h2>
+            <div className="text-2xl font-[family-name:var(--font-geist-mono)] bg-gradient-to-r from-green-600 via-yellow-500 to-blue-500 text-transparent bg-clip-text">
                 <p>
                     <Education/>
                 </p>
-            </div> */}
+            </div>
             <Footer />
         </div>
     )

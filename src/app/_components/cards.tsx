@@ -76,12 +76,12 @@ export const EducationCard: React.FC <EducationCardDetails> = ({
     school_status,
 }) => { 
     return(
-        <div className="flex flex-col gap-3 w-full justify-between rounded-lg h-full p-5">
+        <div className="flex flex-col gap-3 w-full justify-between rounded-lg h-full p-5 border-2 border-yellow-500 border-opacity-80">
      
-        <h2 className="text-xl line-clamp-2 desktop:text-2xl font-medium text-green_s4">
+        <h2 className="text-3xl line-clamp-2 desktop:text-4xl font-medium">
             {school_name}, <i>{school_period}</i>
         </h2>
-        <h3 className="text-xl line-clamp-2 desktop:text-2xl font-medium text-green_s4">
+        <h3 className="text-xl line-clamp-2 desktop:text-2xl font-medium">
             {school_course}
         </h3>
         <p className="tablet:text-sm desktop:text-md line-clamp-4">
