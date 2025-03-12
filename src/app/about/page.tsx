@@ -1,6 +1,6 @@
 import Header from "../_components/header"
 import Footer from "../_components/footer"
-import Education from "./sections/eductaion"
+import Education from "./sections/education"
 
 export default function About() {
     return (

@@ -9,10 +9,10 @@ const Project = () => {
         <div className="w-11/12 desktop:w-3/4 gap-5 flex flex-col ">
             <div className="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3 gap-14 justify-between items-center">
                 {
-                    projects.sort((a, b) => a.project_name.localeCompare(b.project_name)).map((member, index) => {
+                    projects.sort((a, b) => a.project_name.localeCompare(b.project_name)).map((member) => {
                         return (
                             <ProjectCard
-                                key={member.id}
+                                key={member.project_name}
                                 project_name={member.project_name}
                                 project_date={member.project_date}
                                 project_tags={member.project_tags}
