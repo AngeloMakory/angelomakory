@@ -14,9 +14,9 @@ export default function Education() {
             <br/>
             <br/>
             <div className="text-2xl font-[family-name:var(--font-geist-mono)] bg-gradient-to-r from-green-600 via-yellow-500 to-blue-500 text-transparent bg-clip-text">
-                <p>
+                
                     <School/>
-                </p>
+                
             </div>
             <Footer />
         </div>

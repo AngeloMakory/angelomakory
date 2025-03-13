@@ -14,10 +14,8 @@ export default function Experience() {
 
             <br/>
             <br/>
-            <div className="text-2xl font-[family-name:var(--font-geist-mono)] bg-gradient-to-r from-green-600 via-yellow-500 to-blue-500 text-transparent bg-clip-text">
-                <p>
+            <div className="text-2xl font-[family-name:var(--font-geist-mono)] bg-gradient-to-r from-green-600 via-yellow-500 to-blue-500 text-transparent bg-clip-text">    
                     <Organization/>
-                </p>
             </div>
             <Footer />
         </div>
