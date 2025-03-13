@@ -78,16 +78,17 @@ export default function Header() {
 
                     {/* Navigation Links */}
 
-                    <ul className={`
-                        ${isMobile
-                            ? `absolute top-full left-0 w-3/5 bg-gray-300 z-50 flex-col py-4 px-6 shadow-lg
-                            ${isMenuOpen ? 'flex' : 'hidden'}`
-                            : 'flex gap-6 text-md flex-wrap'
-                        }
-                        "flex gap-6 text-md font-[family-name:var(--font-geist-mono)] bg-gradient-to-r from-green-600 via-yellow-500 to-blue-500 text-transparent bg-clip-text  ">
-                        
-                        
-                        `}>
+                    <ul 
+                        className={`
+                            ${isMobile
+                                ? `absolute top-full left-0 w-3/5 bg-gray-800 z-50 flex-col py-4 px-6 shadow-lg
+                                ${isMenuOpen ? 'flex' : 'hidden'}`
+                                : 'flex gap-6 text-md flex-wrap'
+                            }
+                            "flex gap-6 text-md font-[family-name:var(--font-geist-mono)] bg-gradient-to-r from-green-600 via-yellow-500 to-blue-500 text-transparent bg-clip-text  ">
+                        `}
+                        style={isMobile ? {backgroundColor: '#374151'}: {}}
+                        >
                         <li className={isMobile ? "py-3 border-b border-gray-800" : ""}>
                             <Link className="hover:text-white transition-colors duration-300"href="/about" >About Me</Link>                        
                         </li>
