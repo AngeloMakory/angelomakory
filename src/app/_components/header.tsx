@@ -70,8 +70,8 @@ export default function Header() {
                             aria-label={isMenuOpen? "Close menu" : "Open menu"}
                         >
                             {isMenuOpen
-                            ? <LuSquareDashed size = {28}/>
-                            : <LuSquareMenu size= {28}/>
+                            ? <LuSquareDashed size = {50}/>
+                            : <LuSquareMenu size= {50}/>
                             }
                         </button>
                     </div>
@@ -81,27 +81,27 @@ export default function Header() {
                     <ul 
                         className={`
                             ${isMobile
-                                ? `absolute top-full left-0 w-3/5 bg-gray-800 z-50 flex-col py-4 px-6 shadow-lg
+                                ? `absolute top-full left-0 w-3/5 bg-black border-2 border-blue-600 z-50 flex-col py-4 px-6 text-yellow-500
                                 ${isMenuOpen ? 'flex' : 'hidden'}`
-                                : 'flex gap-6 text-md flex-wrap'
+                                : 'flex gap-6 text-md flex-wrap text-yellow-500 '
                             }
-                            "flex gap-6 text-md font-[family-name:var(--font-geist-mono)] bg-gradient-to-r from-green-600 via-yellow-500 to-blue-500 text-transparent bg-clip-text  ">
+                            "flex gap-6 text-md font-[family-name:var(--font-geist-mono)] text-yellow-500">
                         `}
-                        style={isMobile ? {backgroundColor: '#374151'}: {}}
+                        // style={isMobile ? {color: 'orange'}: {color:'orange'}}
                         >
-                        <li className={isMobile ? "py-3 border-b border-gray-800" : ""}>
+                        {/* <li className={isMobile ? "py-3 border-b border-yellow-500" : ""}>
                             <Link className="hover:text-white transition-colors duration-300"href="/about" >About Me</Link>                        
-                        </li>
-                        <li className={isMobile ? "py-3 border-b border-gray-800" : ""}>
+                        </li> */}
+                        <li className={isMobile ? "py-3 border-b border-yellow-500" : ""}>
                             <Link className="hover:text-white transition-colors duration-300" href="/education" >My Education</Link>
                         </li>
-                        <li className={isMobile ? "py-3 border-b border-gray-800" : ""}>
+                        <li className={isMobile ? "py-3 border-b border-yellow-500" : ""}>
                             <Link className="hover:text-white transition-colors duration-300" href="/experience" >My Experience</Link>
                         </li>
-                        <li className={isMobile ? "py-3 border-b border-gray-800" : ""}>
+                        <li className={isMobile ? "py-3 border-b border-yellow-500" : ""}>
                             <Link className="hover:text-white transition-colors duration-300" href="/projects" >My Projects</Link>
                         </li>
-                        <li className={isMobile ? "py-3 border-b border-gray-800" : ""}>
+                        <li className={isMobile ? "py-3 border-b border-yellow-500" : ""}>
                             <Link className="hover:text-white transition-colors duration-300" href="/contact" >Contact Me</Link>
                         </li>
                     </ul>
@@ -109,7 +109,7 @@ export default function Header() {
                     {
                         pathname !== '/' && (
                             <Link href='/' className="text-blue-500 hover:text-white transition-colors duration-500">
-                                <LuHouse size={35} />
+                                <LuHouse size={50} />
                             </Link>
                         )
                     }
